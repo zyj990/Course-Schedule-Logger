@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
 
-
+// 定义课程数据结构（含字段验证，确保数据有效性）
 const courseSchema = new mongoose.Schema({
   courseName: {
     type: String,
-    required: [true, '课程名称不能为空'], // 必须填写
+    required: [true, '课程名不能为空'], // 必传字段，缺失时提示
     trim: true // 去除首尾空格
   },
   classTime: {
@@ -25,9 +25,9 @@ const courseSchema = new mongoose.Schema({
   },
   createdAt: {
     type: Date,
-    default: Date.now // 自动记录创建时间
+    default: Date.now // 自动记录创建时间，无需手动传入
   }
 });
 
-// 导出模型（供路由使用）
+// 导出模型，供路由使用
 module.exports = mongoose.model('Course', courseSchema);

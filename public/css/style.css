@@ -1,17 +1,14 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif; /* 《概要》要求12号Arial字体 */
   font-size: 12px;
 }
 
 .container {
-  width: 90%;
-  max-width: 800px;
+  width: 80%;
   margin: 20px auto;
-  padding: 0 10px;
 }
 
 h1, h2 {
@@ -20,15 +17,14 @@ h1, h2 {
   color: #333;
 }
 
-/* 表单样式 */
-.form-box, .list-box {
+.form-container, .list-container {
   border: 1px solid #ddd;
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 5px;
 }
 
-input, select {
+input {
   width: 100%;
   padding: 8px;
   margin: 8px 0;
@@ -37,7 +33,7 @@ input, select {
 }
 
 button {
-  background-color: #4CAF50;
+  background-color: #007bff;
   color: white;
   padding: 10px 15px;
   border: none;
@@ -47,11 +43,10 @@ button {
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #0056b3;
 }
 
-/* 课程列表样式 */
-.courses {
+#courseList {
   margin-top: 10px;
 }
 
@@ -63,6 +58,6 @@ button:hover {
 }
 
 .course-item p {
-  line-height: 1.5; 
+  line-height: 1.5; /* 《概要》要求1.5倍行距 */
   margin: 5px 0;
 }
