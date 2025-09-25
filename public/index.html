@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Course Schedule Logger</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>课程表记录器</h1>
+
+    <!-- 添加课程表单 -->
+    <div class="form-box">
+      <h2>添加课程</h2>
+      <input type="text" id="courseName" placeholder="课程名称（如：数据库原理）" required>
+      <input type="text" id="classTime" placeholder="上课时间（格式：YYYY-MM-DD HH:MM）" required>
+      <input type="text" id="location" placeholder="上课地点（如：教学楼A101）" required>
+      <input type="number" id="credit" placeholder="学分（1-6）" min="1" max="6" required>
+      <button onclick="addCourse()">提交</button>
+    </div>
+
+    <!-- 课程列表与筛选 -->
+    <div class="list-box">
+      <h2>我的课程</h2>
+      <select id="filterCredit" onchange="filterCourses()">
+        <option value="all">所有学分</option>
+        <option value="1">1学分</option>
+        <option value="2">2学分</option>
+        <option value="3">3学分</option>
+        <option value="4">4学分</option>
+        <option value="5">5学分</option>
+        <option value="6">6学分</option>
+      </select>
+      <div id="courseList" class="courses"></div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
