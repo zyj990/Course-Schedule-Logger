@@ -1,5 +1,5 @@
 # Course-Schedule-Logger
-<<<<<<< HEAD
+ HEAD
 A simple web application to manage and track course schedules, developed for ISYS3001 A2 Assignment.
 
 ## Features
@@ -18,8 +18,5 @@ A simple web application to manage and track course schedules, developed for ISY
 ## GitHub Username
 zyj990
 
-## Live Demo
-https://course-schedule-logger.herokuapp.com/
-=======
-This is a simple personal course timetable recorder that supports adding courses (entering course name, time, location, credits), viewing (displaying in reverse chronological order), deleting (removing incorrect records with one click), and credit filtering)
- dd7a99acf2ce5685288a922720633019ae79ba95
+
+
